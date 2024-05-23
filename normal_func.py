@@ -1,3 +1,4 @@
+# Mediante el análisis previo realizado a las respuestas del modelo, traza la fdp de las respuestas correctas e incorrectas.
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
