@@ -1,3 +1,4 @@
+#Archivo empleado para obtener información acerca de las respuestas de los modelos a los tests en diferentes idiomas.
 import pandas as pd
 
 def procesar_archivo(archivo, idioma):
@@ -24,7 +25,7 @@ def procesar_archivo(archivo, idioma):
 # Procesar el primer archivo
 df_ingles = procesar_archivo('miscellaneous_probs_original.xlsx', 'Inglés')
 # Procesar el segundo archivo
-df_espanol_chatgpt = procesar_archivo('miscellaneous_probs_traducido_chatgpt.xlsx', 'Español ChatGPT')
+df_espanol_chatgpt = procesar_archivo('miscellaneous_probs_traducido_chatgpt.xlsx', 'Español GPT')
 # Procesar el tercer archivo
 df_espanol_azure = procesar_archivo('miscellaneous_probs_traducido_azure.xlsx', 'Español Azure')
 
