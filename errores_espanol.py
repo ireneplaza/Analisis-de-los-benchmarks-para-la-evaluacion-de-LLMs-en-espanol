@@ -1,3 +1,4 @@
+#Este archivo selecciona los casos en los que el modelo falla para alguna de las versiones en español.
 import pandas as pd
 
 # Leer el archivo Excel
