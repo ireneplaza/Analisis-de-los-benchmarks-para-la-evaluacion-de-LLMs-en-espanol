@@ -1,3 +1,4 @@
+#Este archivo utiliza el análisis realizado con analisis.py para trazar un histograma con las respuestas correctas del modelo.
 import pandas as pd
 import matplotlib.pyplot as plt
 import math
