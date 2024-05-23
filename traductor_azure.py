@@ -1,9 +1,10 @@
+#Traductor Azure empleado para obtener las traducciones automáticas necesarias.
 import pandas as pd
 import requests
 import uuid
 def translate_text(text, from_lang, to_lang):
     # Add your key and endpoint
-    key = "f720465e3f9c4babb16b1d5ae5c99053"
+    key = "introducir aquí la key"
     endpoint = "https://api.cognitive.microsofttranslator.com/"
 
     # location, also known as region.
