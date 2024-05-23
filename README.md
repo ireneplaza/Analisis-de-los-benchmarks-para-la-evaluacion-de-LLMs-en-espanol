@@ -1,1 +1,1 @@
-# tfg
+Este repositorio incluye todos el código empleado durante el Trabajo de Fin de Grado "", realizado por Irene Plaza Ortiz. El propósito general de este TFG es estudiar las implicaciones que se derivan de emplear benchmarks diseñados en inglés y traducidos, mediante herramientas de traducción automática, al español en la evaluación de las capacidades de los Large Language Models (LLMs). De este modo, el trabajo busca poner de manifiesto la importancia real de evaluar de manera precisa y específica las habilidades de los LLMs, para seguir promoviendo su desarrollo. 
