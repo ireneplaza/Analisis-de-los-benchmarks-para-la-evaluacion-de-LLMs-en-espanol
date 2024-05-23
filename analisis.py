@@ -1,3 +1,5 @@
+# Este archivo se utiliza una vez obtenidas las respuestas del modelo al test al que se le somete, para realizar un análisis de sus resultados. 
+# Genera un nuevo archivo donde indica si el modelo falla o acierta, indicando la probabilidad de la respuesta correcta, tanto en el caso de que sea la respuesta definitva del modelo, como en el caso de que la respuesta correcta se encontrase en uno de los top_5_tokens.
 import pandas as pd
 
 df_resultados = pd.read_excel("miscellaneous_probs_original.xlsx")
