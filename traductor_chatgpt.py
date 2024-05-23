@@ -1,18 +1,19 @@
+#Traductor basado en la API de ChatGPT, empleado para obtener las traducciones automáticas necesarias.
 import pandas as pd
 import requests
 
 # Define la URL de la API
 url = "https://api.openai.com/v1/chat/completions"
 
-api_key = "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"
+api_key = "introducir aquí api_key"
 
 def translate_text(text):
     messages = [
-        {"role": "user", "content":  f"Traducir {text} al español de forma literal. Tiene que ser literal: no acortar ni reescribir nada." }
+        {"role": "user", "content":  f"Traducir {text} al español." }
     ]
 
     data = {
-        "model": "gpt-4",  # Solo obtiene la traducción correcta con este modelo
+        "model": "gpt-4",  # Modelo empleado para la traducción
         "messages": messages,
         "max_tokens": 200,  # Número máximo de tokens en la respuesta
         "temperature": 0,
