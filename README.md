@@ -2,7 +2,7 @@ Este repositorio incluye todos el código empleado durante el Trabajo de Fin de 
 
 Para conseguir ese objetivo, ha diseñado un método de evaluación de modelos LLM que permita extraer información acerca de su comportamiento al enfrentarse a distintos benchmarks seleccionados. Dicho método emplea los archivos incluidos en este repositorio.
 
-El archivo principal "miscellaneous.py" envía a la API de ChatGPT los tests que se han seleccionado, obteniendo y guardando las respuestas del modelo que se haya solicitado, así como la probabilidad de respuesta y los top_tokens de mayor probabilidad. Después, el fichero que almacena las respuestas se analiza con otros archivos como "analisis.py" o "normal_func.py".
+El archivo principal "test_MMLU.py" envía a la API de ChatGPT los tests que se han seleccionado, obteniendo y guardando las respuestas del modelo que se haya solicitado, así como la probabilidad de respuesta y los top_tokens de mayor probabilidad. Después, el fichero que almacena las respuestas se analiza con otros archivos como "analisis.py" o "normal_func.py".
 
 El siguiente paso implica obtener las traducciones con los servicios automáticos de ChatGPT y Microsoft (Azure Translator), para lo que se ejecutan "traductor_azure.py" y "traductor_chatgpt.py". Una vez obtenidas, se repite el proceso anterior, ejecutando los mismos ficheros.
 
