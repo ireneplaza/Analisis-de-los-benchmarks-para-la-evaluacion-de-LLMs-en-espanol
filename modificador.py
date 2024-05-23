@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Carga el archivo Excel original
-df = pd.read_excel("elem_maths_test_modificado.xlsx")
+df = pd.read_excel("elem_maths_test.xlsx")
 
 datos_ordenado = []
 
