@@ -1,3 +1,6 @@
+# Archivo usado para realizar consultas a la API del modelo. 
+#Se le proporciona un test MMLU para que responda a las preguntas, y guarde dichas respuestas, junto a otros parametros, en un nuevo archivo.
+
 import requests
 import pandas as pd
 from math import exp
@@ -9,7 +12,7 @@ df = pd.read_excel("miscellaneous_modificado.xlsx")
 url = "https://api.openai.com/v1/chat/completions"
 
 # Define la clave de API
-api_key = "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"
+api_key = "introducir aquí la api_key"
 
 # Listas para guardar información a incluir en el Excel con los resultados
 preguntas = []
