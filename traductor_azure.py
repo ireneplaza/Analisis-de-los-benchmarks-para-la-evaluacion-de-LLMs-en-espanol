@@ -39,12 +39,12 @@ def translate_text(text, from_lang, to_lang):
     translated_text = response[0]['translations'][0]['text']
     return translated_text
 
-excel_file_path = 'miscellaneous_original.xlsx'
+excel_file_path = 'testMMLU.xlsx'
 df = pd.read_excel(excel_file_path)
 
 translated_df = df.applymap(lambda x: translate_text(str(x), 'en', 'es') if isinstance(x, str) else x)
 
-translated_excel_path = 'trad.xlsx'
+translated_excel_path = 'test__traducido_gpt.xlsx'
 translated_df.to_excel(translated_excel_path, index=False)
 
 print("Excel traducido guardado en:", translated_excel_path)
