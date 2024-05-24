@@ -2,7 +2,7 @@
 ## TFG del GRADO EN INGENIERÍA DE TECNOLOGÍAS Y SERVICIOS DE TELECOMUNICACIÓN de la ETSIT, UPM.
 ### Realizado por Irene Plaza Ortiz en 2023-2024.
 
-Este repositorio incluye todos el código empleado durante el Trabajo de Fin de Grado "Análisis de los benchmarks para la evaluación de LLM en español". El propósito general de este TFG es estudiar las implicaciones que se derivan de emplear benchmarks diseñados en inglés y traducidos, mediante herramientas de traducción automática, al español en la evaluación de las capacidades de los Large Language Models (LLMs). De este modo, el trabajo busca poner de manifiesto la importancia real de evaluar de manera precisa y específica las habilidades de los LLMs, para seguir promoviendo su desarrollo. 
+Este repositorio incluye todo el código empleado durante el Trabajo de Fin de Grado "Análisis de los benchmarks para la evaluación de LLM en español". El propósito general de este TFG es estudiar las implicaciones que se derivan de emplear benchmarks diseñados en inglés y traducidos, mediante herramientas de traducción automática, al español en la evaluación de las capacidades de los Large Language Models (LLMs). De este modo, el trabajo busca poner de manifiesto la importancia real de evaluar de manera precisa y específica las habilidades de los LLMs, para seguir promoviendo su desarrollo. 
 
 Para conseguir ese objetivo, ha diseñado un método de evaluación de modelos LLM que permita extraer información acerca de su comportamiento al enfrentarse a distintos benchmarks seleccionados. Dicho método emplea los archivos incluidos en este repositorio.
 
