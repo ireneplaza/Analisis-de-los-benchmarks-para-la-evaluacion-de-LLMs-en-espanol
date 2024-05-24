@@ -6,7 +6,7 @@ import pandas as pd
 from math import exp
 
 # Carga el archivo Excel con las preguntas 
-df = pd.read_excel("miscellaneous_modificado.xlsx")  
+df = pd.read_excel("testMMLU.xlsx")  
 
 # Define la URL de la API
 url = "https://api.openai.com/v1/chat/completions"
@@ -99,7 +99,7 @@ for i in range(5):
     df_resultados[f"Top_prob_{i+1}"] = [row[i] if len(row) > i else None for row in top_probabilities_list]
 
 # Convertimos el DataFrame a un archivo Excel
-df_resultados.to_excel("miscellaneous_probs_original.xlsx", index=False)
+df_resultados.to_excel("archivo_respuestas.xlsx", index=False)
 
 print ("Los resultados obtenidos se han guardado con éxito en un archivo llamado miscellaneous_probs.xlsx")
 
