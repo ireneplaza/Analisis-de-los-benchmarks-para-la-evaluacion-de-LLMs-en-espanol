@@ -44,7 +44,7 @@ df = pd.read_excel(excel_file_path)
 
 translated_df = df.applymap(lambda x: translate_text(str(x), 'en', 'es') if isinstance(x, str) else x)
 
-translated_excel_path = 'test__traducido_gpt.xlsx'
+translated_excel_path = 'test__traducido_azure.xlsx'
 translated_df.to_excel(translated_excel_path, index=False)
 
 print("Excel traducido guardado en:", translated_excel_path)
