@@ -30,14 +30,14 @@ def plot_distribucion_probabilidad(dataframe):
 
     plt.xlabel('Probabilidad')
     plt.ylabel('Densidad de Probabilidad')
-    plt.title('Función de Densidad de Probabilidad. Versión Original (Inglés), GPT-3.5-Turbo')
+    plt.title('Función de Densidad de Probabilidad. Indicar versión y Modelo')
 
     plt.legend()
 
-    plt.savefig('fdp_original_chatgpt35.png')
+    plt.savefig('fdp_version_modelo.png')
 
     plt.show()
 
-df_resultados = pd.read_excel("miscellaneous_analisis_original.xlsx")
+df_resultados = pd.read_excel("archivo_analizado.xlsx")
 
 plot_distribucion_probabilidad(df_resultados)
