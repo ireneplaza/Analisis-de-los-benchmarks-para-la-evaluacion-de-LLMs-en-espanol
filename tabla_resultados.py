@@ -23,11 +23,11 @@ def procesar_archivo(archivo, idioma):
     return nuevo_df
 
 # Procesar el primer archivo
-df_ingles = procesar_archivo('miscellaneous_probs_original.xlsx', 'Inglés')
+df_ingles = procesar_archivo('archivo_respuestas_ingles.xlsx', 'Inglés')
 # Procesar el segundo archivo
-df_espanol_chatgpt = procesar_archivo('miscellaneous_probs_traducido_chatgpt.xlsx', 'Español GPT')
+df_espanol_chatgpt = procesar_archivo('archivo_respuestas_traducido_chatgpt.xlsx', 'Español GPT')
 # Procesar el tercer archivo
-df_espanol_azure = procesar_archivo('miscellaneous_probs_traducido_azure.xlsx', 'Español Azure')
+df_espanol_azure = procesar_archivo('archivo_respuestas_traducido_azure.xlsx', 'Español Azure')
 
 # Concatenar los DataFrames
 resultado_final = pd.concat([df_ingles, df_espanol_chatgpt, df_espanol_azure], ignore_index=True)
