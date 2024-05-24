@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import math
 
-df_resultados = pd.read_excel("miscellaneous_analisis_original.xlsx")
+df_resultados = pd.read_excel("archivo_analizado.xlsx")
 
 # Normalizar las probabilidades
 min_probabilidad = df_resultados['Probabilidad'].min()
@@ -17,7 +17,7 @@ plt.figure(figsize=(10, 6))
 plt.hist(correcta['Probabilidad_Normalizada'], color='green', alpha=0.5, label='Respuesta Correcta', bins=int(math.sqrt(df_resultados.notnull().sum().sum())))
 plt.xlabel('Probabilidad')
 plt.ylabel('Frecuencia')
-plt.title('Distribución de Probabilidades de las Respuestas Correctas. Versión Original (Inglés), GPT3.5-Turbo')
+plt.title('Distribución de Probabilidades de las Respuestas Correctas. Indicar versión y modelo')
 
 media_probabilidades = correcta['Probabilidad_Normalizada'].mean()
 
@@ -26,7 +26,7 @@ plt.legend([f'Respuestas Correctas', f'Media = {media_probabilidades}'])
 
 plt.grid(True)
 
-plt.savefig("hist_correctas_original_gpt35.png")
+plt.savefig("hist_correctas_version_modelo.png")
 plt.show()
 
 
