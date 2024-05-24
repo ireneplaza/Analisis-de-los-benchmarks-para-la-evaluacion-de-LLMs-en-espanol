@@ -1,5 +1,5 @@
 #Archivo que emplea el codificador tiktoken para la tokenización del Pater Noster en diferentes idiomas
-#Enlace en el que se consultaron las distintas versiones del Padre NuESTRO: https://es.askingbox.com/informacion/padre-nuestro-en-otros-idiomas#indonesio
+#Enlace en el que se consultaron las distintas versiones del Padre Nuestro: https://es.askingbox.com/informacion/padre-nuestro-en-otros-idiomas
 import tiktoken
 
 enc = tiktoken.encoding_for_model("gpt-4")
