@@ -2,7 +2,7 @@
 # Genera un nuevo archivo donde indica si el modelo falla o acierta, indicando la probabilidad de la respuesta correcta, tanto en el caso de que sea la respuesta definitva del modelo, como en el caso de que la respuesta correcta se encontrase en uno de los top_5_tokens.
 import pandas as pd
 
-df_resultados = pd.read_excel("miscellaneous_probs_original.xlsx")
+df_resultados = pd.read_excel("archivo_a_analizar.xlsx")
 
 # Compara los resultados con la solución
 df_resultados['Respuesta Correcta'] = (df_resultados['Solución'] == df_resultados['Respuesta']).astype(int)
@@ -26,6 +26,6 @@ df_resultados['Probabilidad de Respuesta Correcta'] = probabilidades_respuesta_c
 
 df_final = df_resultados[['Respuesta Correcta', 'Probabilidad', 'Probabilidad de Respuesta Correcta']]
 
-df_final.to_excel("miscellaneous_analisis_original.xlsx", index=False)
+df_final.to_excel("archivo_analizado.xlsx", index=False)
 
-print("Se ha generado el archivo 'miscellaneous_analisis_temp0.xlsx'.")
+print("Se ha generado el archivo")
