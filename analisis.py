@@ -2,7 +2,7 @@
 # Genera un nuevo archivo donde indica si el modelo falla o acierta, indicando la probabilidad de la respuesta correcta, tanto en el caso de que sea la respuesta definitva del modelo, como en el caso de que la respuesta correcta se encontrase en uno de los top_5_tokens.
 import pandas as pd
 
-df_resultados = pd.read_excel("archivo_a_analizar.xlsx")
+df_resultados = pd.read_excel("archivo_respuestas.xlsx")
 
 # Compara los resultados con la solución
 df_resultados['Respuesta Correcta'] = (df_resultados['Solución'] == df_resultados['Respuesta']).astype(int)
