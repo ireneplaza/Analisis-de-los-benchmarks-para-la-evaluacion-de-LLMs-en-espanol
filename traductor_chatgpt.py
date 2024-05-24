@@ -29,7 +29,7 @@ def translate_text(text):
 
     return translation
 
-df = pd.read_excel("miscellaneous_modificado.xlsx")
+df = pd.read_excel("testMMLU.xlsx")
 
 print("Iniciando traducción...")
 for index, row in df.iterrows():
@@ -43,6 +43,6 @@ for index, row in df.iterrows():
 
     print(f"Procesando fila {index + 1} de {len(df)}")
 
-df.to_excel("traducido.xlsx", index=False)
+df.to_excel("test_traducido_gpt.xlsx", index=False)
 
 print("Traducción completada. Archivo 'traducido.xlsx' guardado correctamente.")
